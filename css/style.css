@@ -238,14 +238,25 @@ section h2 {
   margin-top: 20px;
 }
 
-.details-bottom {
-}
 
 .details-bottom li {
   margin: 15px 0;
   padding-bottom: 8px;
   border-bottom: 1px solid #fff;
   border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media(max-width: 768px){
+  .details-top{
+    flex-direction: column;
+  }
+  .details-top img {
+  width: 350px;
+  height: 100%;
+margin: auto;
+  object-fit: cover;
+}
+
 }
 
 /* Search */
@@ -328,16 +339,16 @@ section h2 {
 
 /* Alert */
 .alert {
-  background: red;
+  
   padding: 10px 20px;
   margin-bottom: 20px;
   border-radius: 5px;
 }
 
-.alert-success {
+.success {
   background: green;
 }
 
-.alert-error {
+.error {
   background: red;
 }
